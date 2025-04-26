@@ -1,23 +1,31 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 400px; 
+    width: 400px;
+    height: 400px;
     margin: 20px auto;
-  }
-
+    border: 2px solid #333;
+}
 
 .square {
-    width: 90px;
-    height: 90px;
-    margin: 5px;
     background-color: lightblue;
     border: 1px solid #333;
     box-sizing: border-box;
-    text-align: center;
-    line-height: 90px; /* centers text vertically */
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-  .square.hovered{
+}
+
+.square.hovered {
     background-color: black;
-  }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
